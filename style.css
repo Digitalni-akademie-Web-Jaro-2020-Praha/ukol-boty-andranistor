@@ -1,9 +1,15 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 body {
-    text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
 }
 
 /*
@@ -21,3 +27,138 @@ body {
 */
 
 /* ----- zde zacni psat vlastni css ----- */
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* ==================================== */
+/* Box s dvěma prvky - vizual a detaily */
+/* ==================================== */
+.zbozi {
+  display: flex;
+  width: 670px;
+  height: 440px;
+  margin: 0;
+  box-shadow: 2px 5px 10px #959595;
+  border-radius: 10px;
+}
+
+/* ========================== */
+/* Box s fotkou boty - vizual */
+/* ========================== */
+.vizual {
+  background-image: linear-gradient(#06d7c1, #50cc49);
+  border-radius: 10px 0 0 10px;
+  width: 50%;
+  padding: 30px;
+}
+
+.vizual .logo {
+  margin-bottom: 30px;
+}
+
+.vizual .slogan {
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  margin: 0;
+}
+
+.bota img {
+  position: relative;
+  right: 110px;
+  top: 10px;
+}
+
+.vizual .cenovka {
+  text-align: right;
+  position: relative;
+  bottom: 70px;
+}
+.vizual .cenovka .cena {
+  font-weight: 500;
+  font-size: 28px;
+  color: white;
+}
+
+.vizual .cenovka .zaruka {
+  font-weight: 400;
+  font-size: 12px;
+  color: white;
+}
+
+/* ========================== */
+/* Box s detaily, popis obuvy */
+/* ========================== */
+.detaily {
+  border-radius: 0 10px 10px 0;
+  background-color: white;
+  padding: 30px;
+}
+
+.detaily .nazev {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0;
+}
+
+.detaily .produkt {
+  color: #959595;
+  margin: 5px 0 5px 0;
+}
+
+.detaily .popis {
+  border-bottom: solid 1px #06d7c1;
+  padding: 10px 10px 30px 0;
+  margin-bottom: 0;
+}
+
+.detaily .parametr {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 30px 0 8px 0;
+  margin: 0;
+}
+
+.detaily ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.detaily ul li {
+  padding: 5px;
+  margin: 0 17px 0 0;
+}
+
+.detaily ul li:hover {
+  border: solid 1px #f15f42;
+  border-radius: 50%;
+  color: #f15f42;
+  font-weight: 500;
+}
+
+.akce {
+  display: block;
+  position: absolute;
+  top: 385px;
+}
+
+.akce a {
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background-color: #f15f42;
+  box-shadow: 1px 1px 2px #959595;
+  border-radius: 5px;
+  padding: 15px 35px;
+}
