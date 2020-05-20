@@ -135,15 +135,16 @@ body {
 }
 
 .detaily ul li {
+  border: solid 1px transparent;
+  margin: 0 15px 0 0;
   padding: 5px;
-  margin: 0 17px 0 0;
 }
 
 .detaily ul li:hover {
   border: solid 1px #f15f42;
   border-radius: 50%;
   color: #f15f42;
-  font-weight: 500;
+  /* font-weight: 500; */
 }
 
 .akce {
